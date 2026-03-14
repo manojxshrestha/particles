@@ -1,0 +1,46 @@
+/* Platform Buttons Grid */
+.platform-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.platform-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    height: 80px;
+    gap: 8px;
+}
+
+.platform-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #666;
+}
+
+.platform-btn.active {
+    background: rgba(0, 255, 136, 0.1);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.platform-btn svg {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 2px;
+    overflow: visible;
+}
+
+.platform-btn span {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
